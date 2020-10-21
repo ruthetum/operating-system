@@ -18,7 +18,7 @@ int main() {
 	HANDLE threadHandle;
 	int param=10;
 	
-	// ������ ����
+	// 스레드 생성
 	threadHandle = (HANDLE) _beginthreadex(NULL, 0, addTarget, &param, 0, &threadId);
 	
 	if (threadHandle != NULL) {
